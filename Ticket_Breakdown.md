@@ -15,3 +15,112 @@ Based on the information given, break this ticket down into 2-5 individual ticke
 You will be graded on the level of detail in each ticket, the clarity of the execution plan within and between tickets, and the intelligibility of your language. You don't need to be a native English speaker, but please proof-read your work.
 
 ## Your Breakdown Here
+
+### Ticket 1
+
+Create a table to store a new relationship between `Facility` and `Agent`.
+
+Example:
+
+```json
+{
+  "facilityAgentID": "82d3yo9qsy239oq8y239ys",
+  "facilityID": "348dh3o83jdo48dh398j3",
+  "agentID": "ai8dn2hy9oay3j48o97m32",
+  "agentCustomID": "George-Paul"
+}
+```
+
+Acceptance Criteria:
+
+> - Create the table
+> - Don't forget of creating an index for the PK
+> - One facility can have multiple agents
+> - One agent can be assigned to multiple facilities
+
+Time / Effort:
+
+> Fibonacci Complexity 1: 1 - 2 days
+
+Implementation Details:
+
+> N/A
+
+### Ticket 2
+
+Create an API endpoint that checks if a custom agent ID already existis for a specific `Facility`.
+
+Example:
+
+```json
+{
+  "facilityID": "348dh3o83jdo48dh398j3",
+  "agentCustomID": "George-Paul"
+}
+```
+
+Acceptance Criteria:
+
+> - Create the API endpoint
+
+Time / Effort:
+
+> Fibonacci Complexity 1: 1 - 2 days
+
+Implementation Details:
+
+> N/A
+
+### Ticket 3
+
+Create an API endpoint that receives a payload with the `Facility` ID, `Agent` internal ID, and the new custom ID and saves to the created table.
+This custom ID must be unique accross the facility.
+
+Example:
+
+```json
+{
+  "facilityID": "348dh3o83jdo48dh398j3",
+  "agentID": "ai8dn2hy9oay3j48o97m32",
+  "agentCustomID": "George-Paul"
+}
+```
+
+Acceptance Criteria:
+
+> - Create the API endpoint
+> - The custom ID must be unique
+
+Time / Effort:
+
+> Fibonacci Complexity 1: 1 - 2 days
+
+Implementation Details:
+
+> Use the created API endpoint agent route to check if the custom ID already exists
+
+### Ticket 4
+
+Create an API endpoint that receives a payload with the `Facility` ID, `Agent` custom ID, and returns a report with the list of `Shifts`.
+
+Example:
+
+```json
+{
+  "facilityID": "348dh3o83jdo48dh398j3",
+  "agentCustomID": "George-Paul"
+}
+```
+
+Acceptance Criteria:
+
+> - Create the API endpoint
+> - The report should be the same as before
+
+Time / Effort:
+
+> Fibonacci Complexity 1: 1 - 2 days
+
+Implementation Details:
+
+> Use the same logic the other API endpoint has and change the new table
