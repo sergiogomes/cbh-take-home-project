@@ -34,7 +34,7 @@ Example:
 Acceptance Criteria:
 
 > - Create the table
-> - Don't forget of creating an index for the PK
+> - Don't forget to create an index for the PK
 > - One facility can have multiple agents
 > - One agent can be assigned to multiple facilities
 
@@ -48,7 +48,7 @@ Implementation Details:
 
 ### Ticket 2
 
-Create an API endpoint that checks if a custom agent ID already existis for a specific `Facility`.
+Create an API endpoint that checks if a custom agent ID already exists for a specific `Facility`.
 
 Example:
 
@@ -73,8 +73,8 @@ Implementation Details:
 
 ### Ticket 3
 
-Create an API endpoint that receives a payload with the `Facility` ID, `Agent` internal ID, and the new custom ID and saves to the created table.
-This custom ID must be unique accross the facility.
+Create an API endpoint that receives a payload with the `Facility` ID, `Agent` internal ID, and the new custom ID and saves it to the created table.
+This custom ID must be unique across the facility.
 
 Example:
 
